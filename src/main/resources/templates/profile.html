@@ -1,0 +1,6 @@
+<h1>Профиль</h1>
+<p>Вы вошли как <b th:text="${username}"></b></p>
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Выйти</button>
+</form>

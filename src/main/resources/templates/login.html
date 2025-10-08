@@ -1,0 +1,14 @@
+<form th:action="@{/login}" method="post">
+    <label>Логин:</label>
+    <input type="text" name="username" required><br>
+
+    <label>Пароль:</label>
+    <input type="password" name="password" required><br>
+
+    <button type="submit">Войти</button>
+</form>
+
+<!-- Ошибка при неверном логине/пароле -->
+<div th:if="${param.error}" style="color:red;">
+    Неверный логин или пароль
+</div>
