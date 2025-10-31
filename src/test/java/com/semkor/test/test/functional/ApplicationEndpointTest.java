@@ -1,4 +1,4 @@
-package com.semkor.test.test;
+package com.semkor.test.test.functional;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,8 +26,4 @@ public class ApplicationEndpointTest {
         ResponseEntity<String> response = restTemplate.getForEntity("/page/unknown", String.class);
         assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
     }
-
-
-
-
 }
